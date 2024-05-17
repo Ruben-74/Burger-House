@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Family Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+/* Font Alfa Slab One */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+body {
+    font-family: 'Roboto';
+    /* Tu me cache ce qui sort du container body en horizontale les axes des x*/
+    overflow-x: hidden;
+    /* @apply permet d'utiliser les classe CSS de Tailwind */
+    @apply text-secondary;
+}
+
+p{
+    @apply mb-4;
+}
+
+.animate {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.shadowTitleSecondary {
+    text-shadow: 3px 3px #fee7ba;
+}
+
+.border-style{
+    border-style: dashed;
+    border-color: white;
+    /* Temps de duration de la rotation de l'effet -webkit-transform */
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    -o-transition: -o-transform 0.4s;
+    -ms-transition:-ms-transform 0.4s;
+
+    /* Afin d'enlever le warning also define the standard property for compatibility 
+    il faut ajouter la propieté avec sa valeur sans rajouter les prefix des navigateur */
+    transition: transform 0.4s;
+}
+
+.border-style:hover{
+    /* Rotation sur lui meme lorsqu'on survole avec la souris*/
+    -webkit-transform: rotate(360deg) translateZ(0);
+    -moz-transform: rotate(360deg) translateZ(0);
+    -o-transform: rotate(360deg) translateZ(0);
+    -ms-transform: rotate(360deg) translateZ(0);
+
+        /* Afin d'enlever le warning also define the standard property for compatibility 
+    il faut ajouter la propieté avec sa valeur sans rajouter les prefix des navigateur */
+    transform : rotate(360deg) translateZ(0)
+}
+
+
+.shadowDesign {
+    box-shadow: 7px -7px rgb(255 192 69 / var(--tw-text-opacity));
+    transition-duration: 0.4s;
+    @apply text-secondary;
+    @apply text-white;
+}
+
+.shadowDesign:hover{
+    box-shadow: -7px 7px rgb(255 192 69 / var(--tw-text-opacity));
+    transition-duration: 0.4s;
+    @apply text-secondary;
+    @apply text-white;
+}
+
+
+.ButtonDesign {
+    box-shadow: 7px -7px rgb(255 192 69 / var(--tw-text-opacity));
+    transition-duration: 0.4s;
+    @apply text-secondary;
+    @apply text-white;
+}
+
+.ButtonDesign:hover{
+    box-shadow:none;
+    transition-duration: 0.5s;
+}
