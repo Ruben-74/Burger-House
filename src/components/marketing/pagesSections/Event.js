@@ -13,12 +13,12 @@ import Heading from '../../elements/DisplayTitles/Heading'
 
 const Slide = ({children, category, title, image, description}) =>{
     return(
-        <div className='grid md:grid-cols-2 p-3 md:p-4'>
+        <div className='grid md:grid-cols-2 p-3 md:p-6'>
             <div className='p-5 md:p-10 md:mb-10'>
-               <Heading variant="h4" className="tracking-widest text-gray-900">
+               <Heading variant="h4" className="tracking-widest text-gray-900 bg-primary">
                {category}
                </Heading>
-               <Heading theme="secondary" variant="h3" className="mb-5">
+               <Heading theme="secondary" variant="h2" className="mb-5">
                {title}
                </Heading>
                {/* line-height = leading-relaxed met de l'espace entre chaque ligne  */}
@@ -26,7 +26,7 @@ const Slide = ({children, category, title, image, description}) =>{
                 {/* Contenu */}
             </div>
             {/* On se retrouve dans une grill h-ful w-full l'image prend tt la place */}
-            <div className='flex relative w-full h-96 md:h-full'>
+            <div className='md:grid grid-col relative w-full h-96 md:h-full'>
                 <img src={image} className='item-center justify-center absolute bg-primary top-0 left-0 h-full w-full object-cover object-bottom rounded-t-md z-0' alt={description}/>
             </div>
         </div>
@@ -55,7 +55,7 @@ export default function Event() {
             image={Image1}
             description="une description de l'image"
             category="Nouveau burger"
-            title="Découvrez killer Burger"
+            title="Découvre killer Burger"
         >
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
