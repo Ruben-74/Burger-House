@@ -35,23 +35,23 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className='relative sm:p-5 z-10 flex items-center justify-between'>
-                    <div className='uppercase font-extrabold tracking-tighter text-sm'>
+                <div className='relative pl-7 sm:p-6 z-10 flex items-center justify-between'>
+                    <div className='justify-start uppercase font-extrabold text-xs sm:text-sm'>
                         © Burger House 2024. All rights reserved 
                     </div>
-                    <div className='flex'>
+                    <div className='flex justify-end gap-1'>
                         {/* group permet a l'element parent de creer une zone clicable plus importante */}
                         <a href='https://www.instagram.com/' rel="noreferrer" target='_blank' className='group'>
-                                <img src={IcoInsta} alt="" className='w-7 h-7 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
+                                <img src={IcoInsta} alt="" className='w-6 h-6 sm:w-8 sm:h-8 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
                         </a>
                         <a href='https://www.facebook.com/' rel="noreferrer" target='_blank' className='group'>
-                                <img src={IcoFacebook} alt="" className='w-7 h-7 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
+                                <img src={IcoFacebook} alt="" className='w-6 h-6 sm:w-8 sm:h-8 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
                         </a>
                         <a href='https://www.twitter.com/' rel="noreferrer" target='_blank' className='group'>
-                                <img src={IcoTwitter} alt="" className='w-7 h-7 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
+                                <img src={IcoTwitter} alt="" className='w-6 h-6 sm:w-8 sm:h-8 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
                         </a>
                         <a href='https://www.whatsapp.com/' rel="noreferrer" target='_blank' className='group'>
-                                <img src={IcoWhatsapp} alt="" className='w-7 h-7 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
+                                <img src={IcoWhatsapp} alt="" className='w-6 h-6 sm:w-8 sm:h-8 mr-2 bg-white group-hover:bg-primary animate rounded-full p-1'/>
                         </a>
                     </div>
                 </div>

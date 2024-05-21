@@ -173,3 +173,43 @@ module.exports = {
 
 Cela permetra d'utiliser directement les svg a travers des balises component
 
+## Installer Firebase tools
+
+- npm install -g firebase-tools
+
+Se connceter a google une fois 
+
+$ firebase login - sa va ouvrir une page ou on se connecte avec notre compte google
+
+On va builder l'integralité du paquet pour le rendre compatible avec un navigateur on lance la commande : 
+
+- npm run build
+
+$ firebase init - lance ton projet
+
+Which Firebase features do you want to set up for this directory? Press Space to select features, then Enter to confirm your 
+choices. 
+Choissisez le service : Hosting hebergement depuis le cloud 
+Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project (On choisi un projet existant :)
+? Select a default Firebase project for this directory: burger-house-92247 (Burger House)
+i  Using project : **burger-house-92247 (Burger House)**
+Quel repertoire on va souhaiter deployer: (build)
+What do you want to use as your public directory? (build) et pas public
+Est ce qu'on souhaite configurer une single page ?
+Configure as a single-page app (rewrite all urls to /index.html)? (y/N) Y
+Est ce qu'on souhaite automatiser le deploiment des build depuis github au changment du code sur chaque repo
+Set up automatic builds and deploys with GitHub?
+Dans le dossier build un index existe deja est ce qu'on souhaite le reecrire ?
+File build/index.html already exists. Overwrite? non
+
+$ firebase deploy
+
+https://burger-house-92247.web.app

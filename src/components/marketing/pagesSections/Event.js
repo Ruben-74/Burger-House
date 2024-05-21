@@ -22,7 +22,7 @@ const Slide = ({children, category, title, image, description}) =>{
                {title}
                </Heading>
                {/* line-height = leading-relaxed met de l'espace entre chaque ligne  */}
-               <p className=" font-sans text-xl antialiased font-normal leading-relaxed text-gray-700 mb-0 md:mb-10">{children}</p>
+               <p className=" font-sans text-lg sm:text-xl antialiased font-normal leading-relaxed text-gray-700 mb-0 md:mb-10">{children}</p>
                 {/* Contenu */}
             </div>
             {/* On se retrouve dans une grill h-ful w-full l'image prend tt la place */}
